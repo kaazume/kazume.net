@@ -1,2 +1,19 @@
-{"821356056461705266":[{"tooltip":"なんすか","badge":"https://badges.vencord.dev/badges/1017176847865352332/1-95d023a752f079b1aa38d1d0fec828bae5d1d4bd.gif"},
-{"147138764194447360":[{"tooltip":"てこてこ","badge":"https://kazume.net/ven/imgs/nyancat.gif"}
+{
+    "147138764194447360": [
+    {
+      "tooltip": "てこてこ",
+      "badge": "https://kazume.net/ven/imgs/nyancat.gif"
+    }
+  ],
+  
+    "821356056461705266": [
+    {
+      "tooltip": "なんすか",
+      "badge": "https://badges.vencord.dev/badges/1017176847865352332/1-95d023a752f079b1aa38d1d0fec828bae5d1d4bd.gif"
+    },
+    {
+      "tooltip": "Use VSCode",
+      "badge": "https://badges.vencord.dev/badges/512028479701909504/1-d9f38926e2381d420fc1f74993a9b67eeb188ad5.png"
+    }
+  ]
+}
