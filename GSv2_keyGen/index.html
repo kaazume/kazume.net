@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Swapper v2 Key Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:url" content="https://kazume.net/GSv2_keyGen"/>
+  <meta property="theme-color" content="#ffe4e1"/>
+  <meta property="twitter:site" content="Galaxy Swapper v2 Key Generator"/>
+  <meta property="twitter:creator" content="Galaxy Swapper v2 Key Generator"/>
+  <meta property="twitter:title" content="Galaxy Swapper v2 Key Generator"/>
+  <meta property="twitter:image" content="0"/>
+  <meta property="og:title" content="Galaxy Swapper v2 Key Generator"/>
+  <meta property="og:description" content="Galaxy Swapper v2 の Key Generator"/>
+  <meta property="og:site_name" content="Galaxy Swapper v2 Key Generator"/>
+</head>
+</head>
+<!--
+解析しようとするな！コード欲しいなら本人に言え！(あげるとはいってない)
+Don't try to analyze it! If you want the code, ask him! (I didn't say I'd give it to you)
+-->
+<body>
+  <div class="container">
+    <h1 class="title">Galaxy Swapper v2 Key Generator</h1>
+    <button id="actionButton" class="cute-button">Generate!</button>
+    <br>
+    <p id="loadingText" class="loading-text" hidden>ロード中...</p>
+    <p id="resultText" class="result-text" hidden>結果: <span id="keyValue"></span></p>
+    <p id="cooldownText" class="cooldown-text" hidden></p>
+    <div class="description">
+      <p>一度実行するとクールダウンが始まります。クールダウン中はボタンが無効になります。</p>
+      <p>生成されたkeyはクリックでコピーできます。</p>
+      <p>ステータスを確認してから、実行してください。生成に失敗した場合、時間をおいて再度試してみてください。</p>
+      <p>いつ対策が入るかわかりませんが、その時はその時。</p>
+      <p>最終更新:2024-07-01</p>
+      <br>
+      <p>ステータスの説明: online - 使用できます。 <br> offline - サーバーが停止または、メンテナンスしています。 <br> no working - 対策が入った当で使用できません。</p>
+    </div>
+
+    <h3 class="subtitle">サーバーステータス</h3>
+    <div id="statusMessage" class="status-message">取得中...</div>
+    <br><br><br><big><p>更新ログ</p></big>
+    <p>2024-07-01 : サイト作成&公開+&で不具合修正、高速化、etc...</p>
+    <p>2024-06-31 : なんとなくapi化した</p>
+    <p>2024-06-31 : あるコミュニティを見てkeygenを作る。</p>
+  </div>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <div id="popup" class="popup" hidden>
+    <div class="popup-content">
+      <div class="popup-header">
+        <span id="popupTitle">通知</span>
+        <button id="closePopup" class="close-button">×</button>
+      </div>
+      <div class="popup-body">
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+  </div>
+
+  <label class="switch">
+    <input type="checkbox" id="themeSwitch">
+    <span class="slider round"></span>
+  </label>
+
+  <script src="script.js"></script>
+</body>
+</html>
