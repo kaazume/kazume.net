@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //解析しようとするな！コード欲しいなら本人に言え！(あげるとはいってない)
     //Don't try to analyze it! If you want the code, ask him! (I didn't say I'd give it to you!!!)
 
-    const cooldownTime = 240;//んなに、4分は長いって？そうでもないさ、
+    const cooldownTime = 320;//んなに、4分は長いって？そうでもないさ、
     let cooldownTimer;
   
     closePopup.addEventListener('click', () => {
