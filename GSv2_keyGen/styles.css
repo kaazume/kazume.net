@@ -1,0 +1,241 @@
+body {
+/*    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    background-color: #f0f0f0;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /*
+    解析しようとするな！コード欲しいなら本人に言え！(あげるとはいってない)
+    Don't try to analyze it! If you want the code, ask him! (I didn't say I'd give it to you)
+  */
+
+  .container {
+    text-align: center;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+  }
+  
+  .cute-button {
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cute-button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .description p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .loading-text, .result-text, .cooldown-text {
+    font-size: 18px;
+    color: #ff69b4;
+    margin-top: 20px;
+  }
+  
+  .result-text span {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .popup-content {
+    flex: 1;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .popup-body {
+    overflow-y: auto;
+  }
+  
+  .popup-header #closePopup {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .popup-header #closePopup:hover {
+    color: #333;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text:before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff69b4;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Dark themeeeeeeee foooooooooo */
+  body.dark {
+    background-color: #333;
+  }
+  
+  body.dark .container, body.dark .description p, body.dark .loading-text, body.dark .result-text, body.dark .cooldown-text {
+    color: #fff;
+  }
+  
+  body.dark .cute-button {
+    background-color: #444;
+    color: #ff69b4;
+  }
+  
+  body.dark .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  body.dark .popup {
+    background-color: #444;
+    color: #ff69b4;
+  }
+  
+  .switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 34px;
+    width: 60px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff69b4;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .status-message {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .online {
+    color: rgb(20, 201, 20);
+  }
+  
+  .not-online {
+    color: rgb(173, 1, 1);
+  }
+  
+  .offline {
+    color: rgb(173, 1, 1);
+  }
+  
