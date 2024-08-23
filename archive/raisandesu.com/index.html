@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!--meta-->
+    <title>雷さんのプロパン.</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="msapplication-square70x70logo" content="favicons/site-tile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="favicons/site-tile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="favicons/site-tile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="favicons/site-tile-310x310.png">
+    <meta name="msapplication-TileColor" content="#0078d7">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="favicons/android-chrome-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="favicons/android-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicons/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="favicons/android-chrome-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="favicons/android-chrome-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicons/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="favicons/icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="favicons/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicons/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="favicons/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="favicons/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="favicons/icon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicons/icon-196x196.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicons/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="favicons/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/icon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="favicons/icon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon-32x32.png">
+    <link rel="manifest" href="favicons/manifest.json">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:url" content="https://raisandesu.com/">
+      <meta property="og:title" content="!!ASMR!!">
+      <meta property="og:description" content="プロパンガスは最強">
+      <meta property="og:type" content="twitter:elonmusk">
+      <meta property="og:image" content="favicons/hinomaru-1200x627.png">
+
+
+    <!--Script-->
+    <script src="menu/setup.js" type="module"></script>
+    <script async="" src="pagead/js/f.txt?client=ca-pub-3326621014935824" crossorigin="anonymous"></script>
+  </head>
+  <script>
+    var audio = new Audio('souce/spark-of-inspiration.mp3'); // BGMファイルのパス
+
+    audio.loop = true; // BGMをループ再生する
+
+    // スクロールイベント
+    window.addEventListener('scroll', function () {
+        // スクロール量に応じて音量を調整
+        var volume = 1 - window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        // 音量を0から1の範囲に制限
+        volume = Math.max(1, Math.min(1, volume));
+        audio.volume = volume; // 音量を設定
+    });
+
+    // 初回の再生をトリガー
+    document.body.addEventListener('click', function () {
+        audio.play();
+    });
+</script>
+  <body>
+    <header></header>
+
+    <div class="content has-text-centered">
+      <h1>雷さんのプロパンへようこそ</h1>
+      <p>
+        小学生(クソガキ)です。**が趣味です。よくマゾって言われます。<br>普段していることは**ゲー、クラック,、おうたおくらと遊ぶ
+        ことをしたりしています。<br>SNS ではマゾと一緒に耳舐めASMRをみたり見ています。 <br>プログラミングは おうたおくら, ぱーる, AS_KC, ぱいちゃ, void, 寝みい,
+        などができます。
+      </p>
+
+      <h2>製品</h2>
+
+      <div class="columns is-centered">
+        <div class="column is-narrow">
+          <div class="box" style="width: 300px">
+            <p class="title is-5">Blender</p>
+            <p class="subtitle">タイプ: 雷のアダの製品</p>
+            <p class="subtitle">Twitterのアイコンをゴリラに変更する拡張機能。</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 400px">
+            <p class="title is-5">VS Code RPC</p>
+            <p class="subtitle">タイプ: アコム</p>
+            <p class="subtitle">
+              DiscordにVisual Studio Codeの<br>ゴミみてえなステータスを表示。
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 400px">
+            <p class="title is-5">Purble</p>
+            <p class="subtitle">タイプ: マイクロソフトの製品</p>
+            <p class="subtitle">Visual Studio Codeの<br>だっせえテーマ。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>実績</h2>
+
+      <div class="columns is-centered">
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">クソ米のDiscord部屋</p>
+            <p class="subtitle">1986/11 ~ 2084/02</p>
+            <p class="subtitle">役割: クソガキの告白</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">NoobFN</p>
+            <p class="subtitle">2011/11 ~</p>
+            <p class="subtitle">役割: 破壊</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">ずんだMC Network</p>
+            <p class="subtitle">2011/08 ~ 2012/09</p>
+            <p class="subtitle">役割: 福井</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">GtFN</p>
+            <p class="subtitle">2099/06 ~ 2099/08</p>
+            <p class="subtitle">役割: ぺったんこ</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">雷のプロパンサーバー</p>
+            <p class="subtitle">1792/03 ~</p>
+            <p class="subtitle">役割: オーナー</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>私の好きなElon</h2>
+
+      <div class="columns is-centered">
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">テスラモデル3</p>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="box" style="width: 250px">
+            <p class="title is-5">くらてこをブロックしてる❤️</p>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        本人をフォローしたい場合は、<a href="https://twitter.com/raidesuuu">こちら</a>をご覧ください。
+      </p>
+    </div>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+<img src="./1500x500.png">
+    <footer></footer>
+
+    <script src="js/firebase.js" type="module"></script>
+  </body>
+</html>
