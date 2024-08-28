@@ -16,22 +16,14 @@
       <meta property="og:image" content="https://kazume.net/archive/raisandesu.com/hinomaru-1200x627.png">
 
 </head>
-  <script>
-    var audio = new Audio('./spark-of-inspiration.mp3');
-
-    audio.loop = true;
-
-    window.addEventListener('scroll', function () {
-
-        var volume = 1 - window.scrollY / (document.body.scrollHeight - window.innerHeight);
-
-        volume = Math.max(1, Math.min(1, volume));
-        audio.volume = volume; 
-    });
-
-    document.body.addEventListener('click', function () {
-        audio.play();
-    });
+<audio id="audio" src="./spark-of-inspiration.mp3"></audio>
+<script>
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
 </script>
   <body>
     <header></header>
