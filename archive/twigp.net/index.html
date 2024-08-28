@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter風タイムライン</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesomeのCDNリンク（アイコン用） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- サイドナビ -->
+        <div class="link-list-container">
+            <ul class="link-list">
+                <li><a href="#"><i class="fas fa-home"></i>ホーム</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>プロフィール</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i>通知</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>メッセージ</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i>ブックマーク</a></li>
+                <li><a href="#"><i class="fas fa-list"></i>リスト</a></li>
+                <li><a href="#"><i class="fas fa-ellipsis-h"></i>もっと見る</a></li>
+            </ul>
+        </div>
+        <!-- タイムライン -->
+        <div class="timeline-container">
+            <div class="tweet">
+                <div class="tweet-header">
+                    <img src="https://via.placeholder.com/50" alt="user profile" class="profile-pic">
+                    <div class="tweet-header-info">
+                        <strong>ユーザー名</strong> @username · 5分前
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    これはテストツイートです。タイムラインの例として表示しています。
+                </div>
+                <div class="tweet-actions">
+                    <i class="far fa-comment"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-share-square"></i>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="tweet-header">
+                    <img src="https://via.placeholder.com/50" alt="user profile" class="profile-pic">
+                    <div class="tweet-header-info">
+                        <strong>別のユーザー</strong> @anotheruser · 10分前
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    もう一つのツイートの例です。デザインの確認に使ってください。
+                </div>
+                <div class="tweet-actions">
+                    <i class="far fa-comment"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-share-square"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

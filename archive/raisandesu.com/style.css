@@ -1,4 +1,4 @@
-@import url(/web/20240505062704cs_/https://raisandesu.com/css/dialog.css);
+/*@import url(/web/20240505062704cs_/https://raisandesu.com/css/dialog.css);*/
 
 /* Font Family */
 body {
@@ -68,7 +68,7 @@ body {
 .verified-badge-text {
   padding: 10px 10px 10px 20px;
 
-  background-image: url("/web/20240505062704im_/https://raisandesu.com/images/twitter-verified.svg.html");
+/*  background-image: url("/web/20240505062704im_/https://raisandesu.com/images/twitter-verified.svg.html");*/
   background-position: right 30px center;
   background-repeat: no-repeat;
   background-size: 32px 32px;

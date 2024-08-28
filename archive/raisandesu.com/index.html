@@ -6,7 +6,6 @@
     <title>雷さんのプロパン.</title>
 
     <!--Stylesheet-->
-    <link rel="stylesheet" href="ajax/libs/bulma/0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +13,22 @@
       <meta property="og:title" content="!!ASMR!!">
       <meta property="og:description" content="プロパンガスは最強">
       <meta property="og:type" content="twitter:elonmusk">
-      <meta property="og:image" content="favicons/hinomaru-1200x627.png">
+      <meta property="og:image" content="https://kazume.net/archive/raisandesu.com/hinomaru-1200x627.png">
 
 </head>
   <script>
-    var audio = new Audio('souce/spark-of-inspiration.mp3'); // BGMファイルのパス
+    var audio = new Audio('./spark-of-inspiration.mp3');
 
-    audio.loop = true; // BGMをループ再生する
+    audio.loop = true;
 
-    // スクロールイベント
     window.addEventListener('scroll', function () {
-        // スクロール量に応じて音量を調整
+
         var volume = 1 - window.scrollY / (document.body.scrollHeight - window.innerHeight);
-        // 音量を0から1の範囲に制限
+
         volume = Math.max(1, Math.min(1, volume));
-        audio.volume = volume; // 音量を設定
+        audio.volume = volume; 
     });
 
-    // 初回の再生をトリガー
     document.body.addEventListener('click', function () {
         audio.play();
     });
@@ -159,7 +156,5 @@
     </style>
 <img src="./1500x500.png">
     <footer></footer>
-
-    <script src="js/firebase.js" type="module"></script>
   </body>
 </html>
