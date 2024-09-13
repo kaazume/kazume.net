@@ -1,0 +1,20 @@
+                                ..,
+                    ....,,:;+ccllll            Server-Admin@SERVER-NO2
+      ...,,+:;  cllllllllllllllllll            --------------
+,cclllllllllll  lllllllllllllllllll            OS: Windows 10 Pro
+llllllllllllll  lllllllllllllllllll            Build: 22H2 (19045)
+llllllllllllll  lllllllllllllllllll            Uptime: 2 days, 6 hours, 4 minutes
+llllllllllllll  lllllllllllllllllll            Resolution: 1920x1080 @32Hz
+llllllllllllll  lllllllllllllllllll            Terminal: run.bat
+llllllllllllll  lllllllllllllllllll            CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+                                               GPU: NVIDIA GeForce GTX 1050 Ti
+llllllllllllll  lllllllllllllllllll            Memory: 11238 MB / 16344 MB (68% in use)
+llllllllllllll  lllllllllllllllllll            Disk: C:\ 227.82 GB (39.05 GB free)
+llllllllllllll  lllllllllllllllllll
+llllllllllllll  lllllllllllllllllll            Mem%:  -=[ //////////////////// ]=-
+llllllllllllll  lllllllllllllllllll
+llllllllllllll  lllllllllllllllllll            Disk%: -=[ //////////////////// ]=-
+`'ccllllllllll  lllllllllllllllllll
+      `' \\*::  :ccllllllllllllllll                                            
+                       ````''*::cll                                            
+                                 ``
