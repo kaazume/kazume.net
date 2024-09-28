@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #91caff;
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #333;
+    border: none;
+    color: #e0e0e0;
+    border-radius: 4px;
+    width: 80px;
+}
+
+button {
+    background-color: #91caff;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #75a5d1;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #555;
+}
+
+td {
+    background-color: #444;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calculator-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+#priceResult {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f1c40f;
+}

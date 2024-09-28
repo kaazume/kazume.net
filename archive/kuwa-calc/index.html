@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>なんかの計算機</title>
+</head>
+
+<body>
+    <center><h1>なんかの計算機</h1></center>
+
+    <div id="container">
+        <div class="calculator-section">
+            <h2>指定のスペックで料金計算</h2>
+            <label>vCPUコア数: <input type="number" id="vCPU" min="1" value="1"></label>
+            <label>RAM (GB): <input type="number" id="RAM" min="1" value="1"></label>
+            <label>SSD (10GB単位): <input type="number" id="SSD" min="1" value="1"></label>
+            <button onclick="calculatePrice()">料金計算</button>
+            <p id="priceResult"></p>
+        </div>
+    
+        <div class="calculator-section">
+            <h2>特定の金額範囲で構成を表示</h2>
+            <label>金額の下限 (円): <input type="number" id="priceMin" min="0" value="500"></label>
+            <label>金額の上限 (円): <input type="number" id="priceMax" min="0" value="3000"></label>
+    
+            <label><input type="checkbox" id="minCpuCheck"> 最低vCPUコア数: <input type="number" id="minCpu" min="1" value="1" disabled></label>
+            <label><input type="checkbox" id="minRamCheck"> 最低RAM (GB): <input type="number" id="minRam" min="1" value="1" disabled></label>
+            <label><input type="checkbox" id="minSsdCheck"> 最低SSD (10GB単位): <input type="number" id="minSsd" min="1" value="1" disabled></label>
+    
+            <button onclick="displayConfigurations()">構成を表示</button>
+        </div>
+    </div>
+    
+    <div id="affradconf"></div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
