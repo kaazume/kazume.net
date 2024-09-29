@@ -19,21 +19,9 @@ function calculatePrice() {
     const RAM = parseInt(document.getElementById('RAM').value);
     const SSD = parseInt(document.getElementById('SSD').value);
 
-    let vCPUCost = 0;
-    let RAMCost = 0;
-    let SSDCost = 0;
-
-    for (let i = 1; i <= vCPU; i++) {
-        vCPUCost += calcpriceunit(i);
-    }
-
-    for (let i = 1; i <= RAM; i++) {
-        RAMCost += calcpriceunit(i);
-    }
-
-    for (let i = 1; i <= SSD; i++) {
-        SSDCost += calcpriceunit(i);
-    }
+    const vCPUCost = calcpriceunit(vCPU);
+    const RAMCost = calcpriceunit(RAM);
+    const SSDCost = calcpriceunit(SSD);
 
     const totalPrice = vCPUCost + RAMCost + SSDCost;
     document.getElementById('priceResult').innerText = `総合計: ${totalPrice}円/月`;
@@ -56,23 +44,7 @@ function displayConfigurations() {
     for (let vCPU = minCpu; vCPU <= 10; vCPU++) {
         for (let RAM = minRam; RAM <= 10; RAM++) {
             for (let SSD = minSsd; SSD <= 10; SSD++) {
-                let vCPUCost = 0;
-                let RAMCost = 0;
-                let SSDCost = 0;
-
-                for (let i = 1; i <= vCPU; i++) {
-                    vCPUCost += calcpriceunit(i);
-                }
-
-                for (let i = 1; i <= RAM; i++) {
-                    RAMCost += calcpriceunit(i);
-                }
-
-                for (let i = 1; i <= SSD; i++) {
-                    SSDCost += calcpriceunit(i);
-                }
-
-                const totalPrice = vCPUCost + RAMCost + SSDCost;
+                const totalPrice = calcpriceunit(vCPU) + calcpriceunit(RAM) + calcpriceunit(SSD);
 
                 if (totalPrice >= priceMin && totalPrice <= priceMax) {
                     configs.push({ vCPU, RAM, SSD: SSD * 10, totalPrice });
